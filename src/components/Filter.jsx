@@ -9,7 +9,7 @@ const Filter = ({darkMode, searchCountry, handleFilterByCountry, handleFilterByR
     const [option, setOption] = useState('Filter by region');
 
 
-    const options = ['Africa', 'America', 'Asia', 'Europe', 'Oceania']
+    const options = ['All', 'Africa', 'America', 'Asia', 'Europe', 'Oceania']
 
     return(
         <>

@@ -13,7 +13,7 @@ function Countries({darkMode}) {
 
     const fetchCountries = async() => {
         try{
-                if(selectedRegion){
+                if(selectedRegion && selectedRegion!=='All'){
                     const res = await fetch(`https://restcountries.com/v3.1/region/${selectedRegion}`)
                     const data = await res.json();
                     setCountries(data);
